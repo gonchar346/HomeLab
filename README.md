@@ -81,19 +81,21 @@ Next Milestone:
 
 ## Repository Structure
 
+```text
 homelab/
 ├── README.md
 ├── CHANGELOG.md
+├── .gitignore
 │
 ├── docs/
 │   ├── network/
 │   │   ├── ip-plan.md
-│   │   └── topology.md
+│   │   ├── topology.md
+│   │   └── images/
+│   │       ├── topology.png
+│   │       └── rack.png
+│   │
 │   └── notes/
-│
-├── images/
-│   ├── topology.png
-│   └── rack.png
 │
 ├── cisco/
 │   ├── LAB-R1/
@@ -108,7 +110,8 @@ homelab/
 ├── docker/
 ├── ansible/
 └── scripts/
----
+```
+
 ## Laboratory Topology
 
 
