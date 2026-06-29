@@ -109,6 +109,11 @@ homelab/
 ├── ansible/
 └── scripts/
 ---
+## Laboratory Topology
+
+
+
+![HomeLab Topology](images/lab-topology.jpg)
 
 ## Project Goals
 
