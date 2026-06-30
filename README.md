@@ -98,37 +98,41 @@ Completed:
 ## Repository Structure
 
 ```text
-homelab/
+HomeLab/
+│
 ├── README.md
 ├── CHANGELOG.md
-├── .gitignore
+├── LAB_PROGRESS.md
 │
 ├── docs/
-│   ├── network/
 │   ├── linux/
-│   │   └── ubuntu-server.md
-│   │
-│   ├── docker/
-│   │   ├── docker-basics.md
-│   │   ├── yaml-notes.md
-│   │   └── bind-mounts.md
-│   │
+│   ├── network/
 │   └── notes/
 │
 ├── cisco/
+│   ├── routers/
+│   └── switches/
 │
 ├── proxmox/
-│   └── README.md
-│
-├── docker/
-│   └── nginx/
-│       ├── compose.yml
+│   ├── README.md
+│   │
+│   └── ubuntu-server/
 │       ├── README.md
-│       └── html/
-│           └── index.html
+│       │
+│       └── docker/
+│           ├── README.md
+│           │
+│           └── nginx/
+│               ├── README.md
+│               ├── compose.yml
+│               └── html/
+│                   └── index.html
 │
 ├── ansible/
-└── scripts/
+│
+├── scripts/
+│
+└── images/
 ```
 
 ## Laboratory Topology
