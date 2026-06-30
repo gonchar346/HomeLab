@@ -13,7 +13,7 @@ The goal of this project is to gain hands-on experience with enterprise networki
 | Router           | Cisco 2921                 |
 | Switch           | Cisco Catalyst 2960-24TC-S |
 | Internet Gateway | TP-Link Router             |
-| Hypervisor       | Proxmox VE (planned)       |
+| Hypervisor       | Proxmox VE        |
 
 ---
 
@@ -40,20 +40,32 @@ The goal of this project is to gain hands-on experience with enterprise networki
 * Access Ports
 * Management VLAN
 * Internet Connectivity
+* Proxmox VE Deployment
+* Ubuntu Server 26.04 LTS
+* SSH Remote Management
+* QEMU Guest Agent
+* Docker CE
+* Docker Compose
+* First Docker Compose Project
+* Nginx Container
+* Bind Mounts
 
 ---
 
 ## Planned
 
-* Proxmox VE
-* Ubuntu Server
-* Docker
 * TrueNAS
 * Ansible
 * Zabbix
 * WireGuard VPN
 * GitHub Actions
 * Automated Cisco Configuration Backups
+* Portainer
+* Gitea
+* PostgreSQL
+* Grafana
+* Prometheus
+* Traefik
 
 ---
 
@@ -64,18 +76,22 @@ The physical network is fully operational.
 Completed:
 
 * Cisco 2921 configured
-* Cisco 2960 configured
-* VLANs operational
+* Cisco Catalyst 2960 configured
+* VLAN segmentation operational
+* Inter-VLAN routing operational
 * DHCP operational
-* NAT operational
+* NAT (PAT) operational
 * SSH access enabled
 * Internet connectivity verified
-
-Next Milestone:
-
-* Install Proxmox VE
-* Configure VLAN-aware Linux Bridge
-* Deploy Ubuntu Server VM
+* Proxmox VE installed
+* Ubuntu Server VM deployed
+* QEMU Guest Agent enabled
+* SSH configured for Ubuntu Server
+* Docker CE installed
+* Docker Compose installed
+* First Docker Compose project deployed
+* Nginx running in Docker
+* Bind mount configured
 
 ---
 
@@ -89,25 +105,28 @@ homelab/
 │
 ├── docs/
 │   ├── network/
-│   │   ├── ip-plan.md
-│   │   ├── topology.md
-│   │   └── images/
-│   │       ├── topology.png
-│   │       └── rack.png
+│   ├── linux/
+│   │   └── ubuntu-server.md
+│   │
+│   ├── docker/
+│   │   ├── docker-basics.md
+│   │   ├── yaml-notes.md
+│   │   └── bind-mounts.md
 │   │
 │   └── notes/
 │
 ├── cisco/
-│   ├── LAB-R1/
-│   │   ├── running-config.cfg
-│   │   └── startup-config.cfg
-│   │
-│   └── LAB-SW01/
-│       ├── running-config.cfg
-│       └── startup-config.cfg
 │
 ├── proxmox/
+│   └── README.md
+│
 ├── docker/
+│   └── nginx/
+│       ├── compose.yml
+│       ├── README.md
+│       └── html/
+│           └── index.html
+│
 ├── ansible/
 └── scripts/
 ```
